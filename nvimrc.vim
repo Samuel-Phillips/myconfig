@@ -1,8 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
-source plugins.vim
+source myconfig/plugins.vim
 call plug#end()
 
-source vimrc.vim
+source myconfig/vimrc.vim
 
 " set up vam {{{
 fun! SetupVAM()
