@@ -9,6 +9,5 @@ call plug#end()
 
 runtime myconfig/util.vim
 runtime myconfig/setup.vim
-runtime myconfig/mappings.vim
 runtime myconfig/abbrev.vim
 runtime myconfig/vam.vim
