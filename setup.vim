@@ -78,7 +78,7 @@ syntax enable " Most important command ever
 let mapleader = " "
 let maplocalleader = ','
 " }}}
-" Syntastic stuff {{{
+" scrooloose/syntastic {{{
 "   set statusline+=%#warningmsg#
 "   set statusline+=%{SyntasticStatuslineFlag()}
 "   set statusline+=%*
@@ -89,16 +89,14 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_python_python_exec = 'python3'
 let g:syntastic_cpp_compiler= 'g++'
 let g:syntastic_cpp_compiler_options = '-std=c++11'
-let python_highlight_all = 1 " Python syntax
-let python_highlight_space_errors = 0
 " }}}
-" Airline {{{
+" bling/vim-airline {{{
 let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
 set noshowmode
 
 " }}}
-" Pydoc {{{
+" fs111/pydoc.vim {{{
 let g:pydoc_cmd = "pydoc3"
 let g:pydoc_open_cmd = "tabnew"
 
@@ -109,4 +107,8 @@ let g:python3_host_prog = "/usr/bin/python3"
 "if !exists("b:TheGoogleFunction")
 "    call g:MakeGooglingFunction("")
 "endif
+" }}}
+" hdima/python-syntax {{{
+let g:python_highlight_all = 1
+let g:python_highlight_space_errors = 0
 " }}}
