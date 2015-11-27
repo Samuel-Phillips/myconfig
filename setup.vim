@@ -105,3 +105,8 @@ let g:pydoc_open_cmd = "tabnew"
 let g:python_host_prog = "/usr/bin/python"
 let g:python3_host_prog = "/usr/bin/python3"
 " }}}
+" Failed Experiment {{{
+"if !exists("b:TheGoogleFunction")
+"    call g:MakeGooglingFunction("")
+"endif
+" }}}

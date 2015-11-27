@@ -11,12 +11,6 @@ iabbrev ehco echo
 iabbrev yeild yield
 iabbrev inlcude include
 iabbrev defien define
-if &filetype ==# 'c'
-    iabbrev INclude include
-    iabbrev Include include
-    iabbrev Define define
-    iabbrev DEfine define
-endif
 iabbrev iabberv iabbrev
 iabbrev Ture True
 iabbrev Flase False

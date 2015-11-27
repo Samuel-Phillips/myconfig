@@ -1,0 +1,1 @@
+setl shell=/bin/sh
