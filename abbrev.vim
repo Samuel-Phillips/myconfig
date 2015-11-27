@@ -1,0 +1,30 @@
+iabbrev U8Uint U8Unit
+iabbrev U16Uint U16Unit
+iabbrev esle else
+iabbrev tehn then
+iabbrev functino function
+iabbrev funtion function
+iabbrev funciton function
+iabbrev inoreamp inoremap
+iabbrev nnoreamp nnoremap
+iabbrev ehco echo
+iabbrev yeild yield
+iabbrev inlcude include
+iabbrev defien define
+if &filetype ==# 'c'
+    iabbrev INclude include
+    iabbrev Include include
+    iabbrev Define define
+    iabbrev DEfine define
+endif
+iabbrev iabberv iabbrev
+iabbrev Ture True
+iabbrev Flase False
+iabbrev ture true
+iabbrev flase false
+iabbrev incldeu include
+iabbrev iclude include
+iabbrev strutc struct
+iabbrev colsole console
+iabbrev objetc object
+iabbrev Objetc Object
