@@ -23,3 +23,4 @@ Plug 'gkz/vim-ls' " TODO: kill damn identifier highlighting
 " Plug 'vim-scripts/sql.vim--Stinson'
 
 Plug 'ryanoasis/vim-devicons'
+Plug 'tpope/vim-surround'
