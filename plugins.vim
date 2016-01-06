@@ -24,3 +24,4 @@ Plug 'gkz/vim-ls' " TODO: kill damn identifier highlighting
 
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-surround'
+Plug 'alunny/pegjs-vim'
