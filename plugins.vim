@@ -15,7 +15,7 @@ Plug 'jplaut/vim-arduino-ino'
 Plug 'vim-scripts/vim-auto-save'
 Plug 'kchmck/vim-coffee-script' " TODO: kill trailing WS shit
 " Plug 'altercation/vim-colors-solarized' " in favor of:
-Plug '~/installs/vim-colors-solarized'
+Plug 'Samuel-Phillips/nvim-colors-solarized'
 Plug 'dag/vim-fish'
 Plug 'tpope/vim-fugitive'
 Plug 'tikhomirov/vim-glsl'
