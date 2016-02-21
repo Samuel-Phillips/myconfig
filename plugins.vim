@@ -20,7 +20,7 @@ Plug 'dag/vim-fish'
 Plug 'tpope/vim-fugitive'
 Plug 'tikhomirov/vim-glsl'
 Plug 'gkz/vim-ls' " TODO: kill damn identifier highlighting
-" Plug 'vim-scripts/sql.vim--Stinson'
+Plug 'vim-scripts/sql.vim--Stinson'
 
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-surround'
