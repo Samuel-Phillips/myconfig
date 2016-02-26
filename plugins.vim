@@ -25,3 +25,5 @@ Plug 'vim-scripts/sql.vim--Stinson'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-surround'
 Plug 'alunny/pegjs-vim'
+
+Plug 'airblade/vim-gitgutter'
