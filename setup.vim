@@ -67,6 +67,13 @@ set matchtime=1 " Speed things up
 set foldmethod=syntax " Get some folding action
 set foldlevelstart=99 " Don't auto-close folds
 
+" s/re/g -> s/re/
+set gdefault
+
+" Auto break @ 80 cols
+set linebreak
+set textwidth=80
+
 set visualbell t_vb= " Get rid of that damn beeping
 set virtualedit=block " holy shit why is this not the default
 let c_gnu=1 " Real men use GCC
