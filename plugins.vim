@@ -27,3 +27,5 @@ Plug 'tpope/vim-surround'
 Plug 'alunny/pegjs-vim'
 
 Plug 'airblade/vim-gitgutter'
+
+Plug 'vim-scripts/Conque-GDB'
