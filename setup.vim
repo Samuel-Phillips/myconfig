@@ -20,51 +20,40 @@ filetype on
 filetype plugin on
 filetype indent on
 
-set shell=/usr/bin/fish " Bounce
+set shell=/usr/bin/fish
 
 set autoread " Keep file in sync
-"   set number   " Add Line numbers , but I no want now
+"   set number   " Add Line numbers
 set backspace=eol,start,indent " Backspace stuff
 set hlsearch " highlight search results.
-set incsearch " Like Google Instant for Vim
-" Fix seach colors
+set incsearch
+" Fix search colors
 hi Search cterm=NONE ctermfg=NONE ctermbg=white
 set lazyredraw " Don't redraw when not interactive
-set magic " Make regexes work better... but not perfect
+set magic " Make regexes work better... sadly no set verymagic
 set showmatch " Indicate when a matching paren is typed
 if !has('nvim')
     set encoding=utf8
-    " Possibly second most important command ever
 endif
-set ffs=unix " One true line ending format
-set expandtab " Expand tabs to spaces
-set showcmd " Shows command as you type it, like Emacs
-set scrolloff=2 " Keep five lines away from edge of screen
+set fileformats=unix
+set showcmd " Shows command as you type it
+set scrolloff=2 " Keep two lines away from edge of screen
 set clipboard=unnamedplus " Use the system clipboard
-" Tab good
+
+" Tab / space settings
+" 4-space indents, spaces
+set expandtab
 set smarttab
-set shiftwidth=4
 set tabstop=4
-" But not in HTML
-" autocmd FileType html setl sw=2 ts=2 " Yes in HTML
+set shiftwidth=0
+set softtabstop=0
 
-set shiftwidth=4
-set tabstop=4
-
-" Indentation good
 set autoindent
 set smartindent
-" This entire block of code is irrelevent since Neovim has
-" truecolor support
-" if $TERM ==# "linux"
-"     set t_Co=8 " linux terminal is 8-color only
-" else
-"     set t_Co=16 " Use 16 colors only
-" endif
+
 set mouse=a " Mouse support
-set colorcolumn=80 " Indicate when lines are too long
 set matchtime=1 " Speed things up
-set foldmethod=syntax " Get some folding action
+set foldmethod=syntax
 set foldlevelstart=99 " Don't auto-close folds
 
 " s/re/g -> s/re/
@@ -72,15 +61,14 @@ set gdefault
 
 " Auto break @ 80 cols
 set linebreak
-set textwidth=80
+set colorcolumn=+1,+2
+set textwidth=80 " 80 cols is the maximum
 
 set visualbell t_vb= " Get rid of that damn beeping
-set virtualedit=block " holy shit why is this not the default
-let c_gnu=1 " Real men use GCC
-" Statusline stuff
-set laststatus=2
+set virtualedit=block " Move cursor anywhere when in block mode
+let c_gnu=1 " Highlight gcc stuff, I think
 
-syntax enable " Most important command ever
+syntax enable
 
 let mapleader = " "
 let maplocalleader = ','
@@ -98,9 +86,10 @@ let g:syntastic_cpp_compiler= 'g++'
 let g:syntastic_cpp_compiler_options = '-std=c++11'
 " }}}
 " bling/vim-airline {{{
+set laststatus=2
+set noshowmode
 let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
-set noshowmode
 
 " }}}
 " fs111/pydoc.vim {{{
@@ -109,11 +98,6 @@ let g:pydoc_open_cmd = "tabnew"
 
 let g:python_host_prog = "/usr/bin/python"
 let g:python3_host_prog = "/usr/bin/python3"
-" }}}
-" Failed Experiment {{{
-"if !exists("b:TheGoogleFunction")
-"    call g:MakeGooglingFunction("")
-"endif
 " }}}
 " hdima/python-syntax {{{
 let g:python_highlight_all = 1
