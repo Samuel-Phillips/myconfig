@@ -45,8 +45,8 @@ set clipboard=unnamedplus " Use the system clipboard
 set expandtab
 set smarttab
 set tabstop=4
-set shiftwidth=0
-set softtabstop=0
+set shiftwidth=4
+set softtabstop=4
 
 set autoindent
 set smartindent
