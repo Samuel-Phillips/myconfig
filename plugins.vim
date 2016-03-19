@@ -11,6 +11,7 @@ Plug 'vim-scripts/svg.vim'
 Plug 'vim-scripts/taglist.vim'
 Plug 'Shougo/unite.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'jplaut/vim-arduino-ino'
 Plug 'vim-scripts/vim-auto-save'
 Plug 'kchmck/vim-coffee-script' " TODO: kill trailing WS shit
