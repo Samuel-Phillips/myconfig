@@ -1,5 +1,7 @@
 " Colorscheme {{{
-set termguicolors
+if $NVIM_TUI_ENABLE_TRUE_COLOR
+    set termguicolors
+endif
 set background=dark
 colorscheme solarized
 
