@@ -2,6 +2,8 @@ if !has('nvim')
     set nocompatible
 endif
 
+runtime myconfig/presetup.vim
+
 call plug#begin('~/.config/nvim/plugged')
 runtime myconfig/plugins.vim
 Plug '~/.config/nvim/myconfig/always'

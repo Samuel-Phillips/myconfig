@@ -1,3 +1,7 @@
+func! DoRemote(arg)
+    UpdateRemotePlugins
+endfunc
+
 " arduino.vim
 Plug 'lambdatoast/elm.vim'
 Plug 'othree/html5.vim'
@@ -30,3 +34,13 @@ Plug 'alunny/pegjs-vim'
 Plug 'airblade/vim-gitgutter'
 
 Plug 'vim-scripts/Conque-GDB'
+
+
+Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
+Plug 'zchee/deoplete-jedi'
+Plug 'carlitux/deoplete-ternjs'
+"Plug 'zchee/deoplete-clang'
+Plug 'Rip-Rip/clang_complete'
+
+Plug 'carlitux/deoplete-ternjs'
+"Plug 'm2mdas/phpcomplete-extended'

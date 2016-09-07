@@ -5,7 +5,11 @@ endif
 set background=dark
 colorscheme solarized
 
-let g:solarized_termtrans=1
+let g:deoplete#enable_at_startup = 1
+
+if !($TERM =~ '\v^st(term)?-')
+    let g:solarized_termtrans=1
+endif
 " let g:solarized_degrade=0
 let g:solarized_bold=1
 let g:solarized_underline=1
@@ -56,7 +60,7 @@ set smartindent
 
 set mouse=a " Mouse support
 set matchtime=1 " Speed things up
-set foldmethod=syntax
+" set foldmethod=syntax " Deoplete; install FastFold?
 set foldlevelstart=99 " Don't auto-close folds
 
 " s/re/g -> s/re/
@@ -98,9 +102,6 @@ let g:airline_powerline_fonts = 1
 " fs111/pydoc.vim {{{
 let g:pydoc_cmd = "pydoc3"
 let g:pydoc_open_cmd = "tabnew"
-
-let g:python_host_prog = "/usr/bin/python"
-let g:python3_host_prog = "/usr/bin/python3"
 " }}}
 " hdima/python-syntax {{{
 let g:python_highlight_all = 1
