@@ -44,3 +44,4 @@ Plug 'Rip-Rip/clang_complete'
 
 Plug 'carlitux/deoplete-ternjs'
 "Plug 'm2mdas/phpcomplete-extended'
+Plug 'racer-rust/vim-racer'

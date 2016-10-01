@@ -107,3 +107,6 @@ let g:pydoc_open_cmd = "tabnew"
 let g:python_highlight_all = 1
 let g:python_highlight_space_errors = 0
 " }}}
+" racer {{{
+let g:racer_cmd = $HOME."/.cargo/bin/racer"
+" }}}
