@@ -45,3 +45,11 @@ Plug 'Rip-Rip/clang_complete'
 Plug 'carlitux/deoplete-ternjs'
 "Plug 'm2mdas/phpcomplete-extended'
 Plug 'racer-rust/vim-racer'
+
+Plug 'Shougo/vimshell.vim'
+Plug 'Shougo/vimproc'
+
+Plug 'plasticboy/vim-markdown'
+Plug 'lervag/vimtex'
+Plug 'gioele/vim-autoswap'
+Plug 'bling/vim-bufferline'

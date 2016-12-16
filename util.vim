@@ -30,3 +30,13 @@ endfunction
 "endfunction
 " }}}
 
+function! s:insert_gates(cplusplus)
+    let gatename = 'INCLUDE_GUARD_' . toupper(system('openssl rand -hex 16'))
+    execute "normal! i#ifndef " . gatename
+    execute "normal! i#define " . gatename
+    normal! o
+    normal! Go#endif /* guard */
+    normal! kk
+endfunction
+autocmd BufNewFile *.hpp call <SID>insert_gates(1)
+autocmd BufNewFile *.h call <SID>insert_gates(0)

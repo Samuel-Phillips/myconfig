@@ -1,11 +1,17 @@
 " Colorscheme {{{
-if $NVIM_TUI_ENABLE_TRUE_COLOR
+if has('nvim') && $NVIM_TUI_ENABLE_TRUE_COLOR
     set termguicolors
 endif
 set background=dark
 colorscheme solarized
 
-let g:deoplete#enable_at_startup = 1
+if has('nvim')
+    let g:deoplete#enable_at_startup = 1
+endif
+
+if !has('nvim')
+    set cryptmethod=blowfish2
+endif
 
 if !($TERM =~ '\v^st(term)?-')
     let g:solarized_termtrans=1
@@ -34,6 +40,8 @@ set autoread " Keep file in sync
 set backspace=eol,start,indent " Backspace stuff
 set hlsearch " highlight search results.
 set incsearch
+set spelllang=en_us
+set spellfile=~/.config/nvim/myconfig/spell.utf-8.add
 " Fix search colors
 hi Search cterm=NONE ctermfg=NONE ctermbg=white
 set lazyredraw " Don't redraw when not interactive
@@ -71,7 +79,9 @@ set linebreak
 set colorcolumn=+1,+2
 set textwidth=80 " 80 cols is the maximum
 
-set visualbell t_vb= " Get rid of that damn beeping
+set novisualbell
+set belloff=backspace,cursor,insertmode,error
+
 set virtualedit=block " Move cursor anywhere when in block mode
 let c_gnu=1 " Highlight gcc stuff, I think
 
@@ -110,3 +120,7 @@ let g:python_highlight_space_errors = 0
 " racer {{{
 let g:racer_cmd = $HOME."/.cargo/bin/racer"
 " }}}
+" plasticboy/vim-markdown {{{
+" }}}
+" bling/vim-bufferline {{{
+let g:bufferline_echo = 0

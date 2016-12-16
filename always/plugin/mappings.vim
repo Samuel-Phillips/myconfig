@@ -1,5 +1,7 @@
 " Make it easier to get to normal mode from a terminal
-tnoremap <C-Z> <C-\><C-n>
+if has('nvim')
+    tnoremap <C-Z> <C-\><C-n>
+endif
 "tnoremap <C-R> <C-\><C-n>kyypi
 
 " I'll never record macros in visual mode
