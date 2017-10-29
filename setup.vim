@@ -33,6 +33,10 @@ filetype on
 filetype plugin on
 filetype indent on
 
+set breakindent
+set breakindentopt=sbr
+set showbreak=-> 
+
 set shell=/usr/bin/fish
 
 set autoread " Keep file in sync
@@ -124,3 +128,4 @@ let g:racer_cmd = $HOME."/.cargo/bin/racer"
 " }}}
 " bling/vim-bufferline {{{
 let g:bufferline_echo = 0
+" }}}

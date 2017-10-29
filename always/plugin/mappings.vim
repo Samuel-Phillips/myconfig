@@ -74,6 +74,8 @@ nnoremap <leader>F :<C-u>Unite -no-split -start-insert file<CR>
 nnoremap <leader>sf :split<cr>:<C-u>Unite -no-split file<CR>
 nnoremap <leader>sF :split<cr>:<C-u>Unite -no-split -start-insert file<CR>
 
+autocmd BufReadPost quickfix nnoremap <Space> <CR>:lcl<CR>
+
 " Easy fugitive
 nnoremap <leader>g :G
 
