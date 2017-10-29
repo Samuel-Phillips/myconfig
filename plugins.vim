@@ -40,7 +40,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': function('DoRemote') }
 Plug 'zchee/deoplete-jedi'
 Plug 'carlitux/deoplete-ternjs'
 "Plug 'zchee/deoplete-clang'
-Plug 'Rip-Rip/clang_complete'
+"Plug 'Rip-Rip/clang_complete'
 
 Plug 'carlitux/deoplete-ternjs'
 "Plug 'm2mdas/phpcomplete-extended'
@@ -53,3 +53,4 @@ Plug 'plasticboy/vim-markdown'
 Plug 'lervag/vimtex'
 Plug 'gioele/vim-autoswap'
 Plug 'bling/vim-bufferline'
+Plug 'cespare/vim-toml'
