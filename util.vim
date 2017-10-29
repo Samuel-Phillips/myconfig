@@ -31,12 +31,18 @@ endfunction
 " }}}
 
 function! s:insert_gates(cplusplus)
-    let gatename = 'INCLUDE_GUARD_' . toupper(system('openssl rand -hex 16'))
-    execute "normal! i#ifndef " . gatename
-    execute "normal! i#define " . gatename
-    normal! o
-    normal! Go#endif /* guard */
-    normal! kk
+    let l:gatename = 'INCLUDE_GUARD_' .
+    \   pyeval('"%0.32X" % __import__("random").randrange(1, 1<<128)')
+
+    call append(0, [
+    \       "#ifndef " . l:gatename,
+    \       "#define " . l:gatename
+    \   ])
+
+    call append(line('$'), [
+    \       "#endif /* !defined " . gatename . " */"
+    \   ])
 endfunction
+
 autocmd BufNewFile *.hpp call <SID>insert_gates(1)
 autocmd BufNewFile *.h call <SID>insert_gates(0)
