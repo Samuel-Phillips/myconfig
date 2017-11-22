@@ -57,4 +57,6 @@ Plug 'gioele/vim-autoswap'
 "Plug 'bling/vim-bufferline'
 Plug 'cespare/vim-toml'
 
+Plug 'aklt/plantuml-syntax'
+
 Plug 'vim-scripts/avs.vim' " AVISynth syntax
