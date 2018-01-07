@@ -46,3 +46,5 @@ endfunction
 
 autocmd BufNewFile *.hpp call <SID>insert_gates(1)
 autocmd BufNewFile *.h call <SID>insert_gates(0)
+autocmd BufNewFile *.hh call <SID>insert_gates(0)
+autocmd BufNewFile *.H call <SID>insert_gates(0)
